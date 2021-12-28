@@ -35,7 +35,7 @@ WRONG_ANSWERS: 2
 ### Initial setup
 - This project is built using Gradle and some Spring Boot libraries based on Java 11.
 - An in-memory H2 DB is setup by default, creating a QUIZ_RESULT table.
-- The application already has enough pre-defined structure that it will start with using `./gradlew bootRun`
+- The application already has enough pre-defined structure that it will start by running `./gradlew bootRun`
 
 ### Additional notes
 - Do not receive help from any other humans. Using online documentation is acceptable.
