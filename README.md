@@ -6,7 +6,7 @@ Users of Odyssey's (imaginary) quiz-taking web application submit answers to a q
 
 ### Your mission
 1. Clone this repo
-2. Update the project to handle a POST request to a URL path `/answers/<ANY_USERNAME>` with a JSON body containing the user's answers to the 3 questions. Assume the frontend has sent the request; you do not build the frontend or know what the questions were.
+2. Update the project to handle a POST request to a URL path `/answers/<ANY_USERNAME>` with a JSON body containing the user's answers to the 3 questions. Assume the frontend has sent the request; you do not build the frontend.
 3. An example JSON body is found in `src/test/resources/test_answers.json`
 4. Your result should compare the answers to the correct answers located in `src/main/resources/quiz/correct_answers.json`.
 5. After determining the count of correct answers and wrong answers, save a QuizResult record to the QUIZ_RESULT table in the H2 database.
@@ -35,7 +35,7 @@ WRONG_ANSWERS: 2
 ### Initial setup
 - This project is built using Gradle and some Spring Boot libraries based on Java 11.
 - An in-memory H2 DB is setup by default, creating a QUIZ_RESULT table.
-- The application already has enough pre-defined structure that it will start by running `./gradlew bootRun`
+- The application already has enough pre-defined structure that it will start by running `./gradlew bootRun` (Mac/Linux)
 
 ### Additional notes
 - Do not receive help from any other humans. Using online documentation is acceptable.
