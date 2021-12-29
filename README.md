@@ -39,7 +39,7 @@ WRONG_ANSWERS: 2
 
 ### Additional notes
 - Do not receive help from any other humans. Using online documentation is acceptable.
-- There's a variety of approaches to complete this task. Choose your preferred approach. 
+- There's a variety of approaches to complete this task. Choose your preferred approach, and do whatever you want to make it work (e.g. import new libraries). 
 - Be prepared to talk about why you chose your approach, possible alternative approaches, how to test it, and future improvements. 
 - This repo is known to work with a Mac/Linux environment. It should also work within a Windows environment by running `gradlew.bat bootRun`. Contact us if that is not working. 
 
