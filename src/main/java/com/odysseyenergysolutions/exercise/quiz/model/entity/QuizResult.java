@@ -1,9 +1,10 @@
-package com.odysseyenergysolutions.exercise.quiz.model;
+package com.odysseyenergysolutions.exercise.quiz.model.entity;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
@@ -27,6 +28,7 @@ public class QuizResult {
 
   private String quizUser;
 
+  @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm")
   @CreatedDate private LocalDateTime quizDate;
 
   /**
