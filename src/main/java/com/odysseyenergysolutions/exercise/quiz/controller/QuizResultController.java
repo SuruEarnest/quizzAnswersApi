@@ -28,7 +28,7 @@ public class QuizResultController {
     }
 
     @PostMapping(value="/{username}",consumes="application/json",produces="application/json")
-    @ApiOperation(value = "Submit Answers", notes = "Endpoint to submit quiz answers.")
+    @ApiOperation(value = "Submit Answers", notes = "Endpoint to submit quiz answers." )
     public @ResponseBody
     ResponseEntity<?> processQuizAnswers(@Valid  @RequestBody QuizAnswerRequestDto quizAnswerRequestDto, @PathVariable("username") String username) {
 

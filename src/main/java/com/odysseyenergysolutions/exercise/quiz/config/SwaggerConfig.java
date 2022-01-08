@@ -31,7 +31,7 @@ public class SwaggerConfig extends WebMvcConfigurationSupport {
     public Docket apiDocket() {
         return new Docket(DocumentationType.SWAGGER_2).select()
                 .apis(RequestHandlerSelectors.basePackage("com.odysseyenergysolutions.exercise.quiz.controller"))
-                .paths(regex("/api.*")).build().apiInfo(metaData())
+                .paths(regex("/answers.*")).build().apiInfo(metaData())
                 .securitySchemes(Arrays.asList(apiKey()));
     }
 
