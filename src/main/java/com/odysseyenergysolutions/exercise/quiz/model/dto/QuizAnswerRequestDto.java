@@ -1,5 +1,6 @@
 package com.odysseyenergysolutions.exercise.quiz.model.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.validation.constraints.NotEmpty;
@@ -19,5 +20,7 @@ public class QuizAnswerRequestDto {
     private Boolean question2;
     @NotNull(message ="Answer to question 3 is required")
     private Integer question3;
+
+    @JsonIgnore
     private String user;
 }
